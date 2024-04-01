@@ -1,0 +1,65 @@
+body {
+  background-color: #0a0a0a;
+}
+.card-wrapper {
+  width: 125px;
+  height: 95px;
+  background-color: #343434;
+  border-radius: 10px;
+  margin: 40px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.card-wrapper>div {
+  position: absolute;
+}
+.pencil {
+  bottom: 43px;
+  right: 75px;
+  animation: movePencil 2s ease-in-out infinite;
+  z-index: 9;
+}
+.purple-lines {
+  animation: moveLines 2s ease-in-out infinite;
+}
+
+.html-tag {
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out infinite;
+}
+.ruler {
+  top: 50px;
+  left: 5px;
+  animation: moveRuler 2s ease-in-out infinite;
+}
+@keyframes moveLines {
+  30% {
+    transform: translate(-75%, -75%);
+    opacity: 0;
+  }
+}
+@keyframes fadeIn {
+  10% {
+    opacity: 0;
+  }
+  45% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 0;
+  }
+}
+@keyframes moveRuler {
+  30% {
+    transform: rotate(77deg);
+    top: 9px;
+    left: 59px;
+  }
+}
+@keyframes movePencil {
+  30% {
+    transform: rotate(45deg);
+  }
+}

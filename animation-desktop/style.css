@@ -1,0 +1,106 @@
+body {
+  background: #0A0A0A;
+}
+
+.image-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+}
+
+.main-image {
+  animation: grow 3s ease-in-out;
+}
+
+.fade-in-images {
+  position: absolute;
+}
+
+.fade-in-images>div {
+  position: relative;
+  animation: fadeIn 3s ease-in-out;
+}
+
+.search-bar-img {
+  top: 12px;
+  right: 80px;
+}
+
+.product-page-img {
+  left: 145px;
+}
+
+.card1-img {
+  top: 85px;
+  right: 120px;
+}
+
+.card2-img {
+  right: 20px;
+  top: 15px;
+}
+
+.moving-card {
+  position: relative;
+  animation: moveCard 3s ease-in-out;
+  right: 55px;
+  top: 90px;
+}
+
+@keyframes grow {
+  0% {
+      transform: scale(0.95);
+  }
+  20% {
+      transform: scale(0.95);
+  }
+
+  40% {
+      transform: scale(1);
+  }
+
+  100% {
+      transform: scale(1);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes moveCard {
+  0% {
+    right: 95px;
+    top: 60px;
+    opacity: 0;
+  }
+  20% {
+    right: 95px;
+    top: 60px;
+    opacity: 0;
+  }
+  40% {
+    right: 55px;
+    top: 90px;
+    opacity: 1;
+  }
+  100% {
+    right: 55px;
+    top: 90px;
+    opacity: 1;
+  }
+}
