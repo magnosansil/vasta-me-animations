@@ -1,0 +1,88 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(179, 179, 179);
+}
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 936px;
+  height: auto;
+  margin: 50px auto;
+}
+
+.straight-line-container {
+  height: 100%;
+}
+
+.line-svg {
+  height: 100%;
+  height: auto; 
+  overflow: visible;
+}
+
+.line-svg-growing {
+  position: absolute;
+  left: 0;
+  stroke-dasharray: 1115;
+  animation: drawStraightLine 10s linear;
+}
+
+.circle {
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: #ccc;
+  left: -13px;
+}
+
+.circle:not(.circle-1) {
+  animation-name: fillCircle;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.circle-1 {
+  background-color: #3733EB;
+  top: 2%;
+  box-shadow: 0 0 0 10px #820AD230;
+}
+
+.circle-2 {
+  top: 25%;
+  animation-delay: 2.5s;
+}
+.circle-3 {
+  top: 50%;
+  animation-delay: 5s;
+}
+.circle-4 {
+  top: 75%;
+  animation-delay: 7.5s;
+}
+.circle-5 {
+  top: 99%;
+  animation-delay: 10s;
+}
+
+
+@keyframes drawStraightLine {
+  from {
+    stroke-dashoffset: 1115;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fillCircle {
+  to {
+    box-shadow: 0 0 0 10px #820AD230;
+    background-color: #3733EB;
+  }
+}
