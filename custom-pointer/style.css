@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  height: 100vh;
+  cursor: none;
+}
+
+.interactive-element {
+  width: 300px;
+  height: 150px;
+  margin: 50px auto;
+  background-color: lightblue;
+  text-align: center;
+  line-height: 150px;
+  font-size: 18px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.custom-pointer {
+  position: absolute;
+  font-size: 20px;
+  color: green; 
+  pointer-events: none; 
+  transform: translate(-50%, -50%) rotate(225deg);
+  z-index: 1000;
+}
+
+
+.custom-popup {
+  position: absolute;
+  background: green;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 5px;
+  font-size: 14px;
+  pointer-events: none;
+  white-space: nowrap;
+  z-index: 999;
+  display: none; 
+}
