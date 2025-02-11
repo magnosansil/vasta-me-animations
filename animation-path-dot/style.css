@@ -22,13 +22,13 @@ svg {
   overflow: visible;
 }
 .svg-trail {
-  stroke-dasharray: 4050;
+  stroke-dasharray: 3150;
   animation: drawTrail 10s linear;
 }
 
 @keyframes drawTrail {
   from {
-  stroke-dashoffset: 4050;
+  stroke-dashoffset: 3150;
   }
   to {
     stroke-dashoffset: 0;
